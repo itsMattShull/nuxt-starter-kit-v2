@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Button renders to a snapshot 1`] = `
+<div>
+    <nuxt></nuxt>
+    <!---->
+</div>
+`;

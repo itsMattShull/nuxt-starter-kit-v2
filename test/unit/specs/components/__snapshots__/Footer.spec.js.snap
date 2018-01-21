@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Footer renders to a snapshot 1`] = `
+<footer>
+    Visit our website for more documentation :
+    <a href="https://nuxtjs.org" target="_blank">nuxtjs.org</a>
+</footer>
+`;

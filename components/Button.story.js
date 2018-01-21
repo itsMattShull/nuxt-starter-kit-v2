@@ -19,7 +19,7 @@ storiesOf('MyButton', module)
     components: { MyButton },
     template: `
       <p>
-        <my-button :rounded="true" @click="log">MyButton rendered in a template + props & methods</my-button>
+        <my-button :rounded="true" :handle-click="log">MyButton rendered in a template + props & methods</my-button>
       </p>`,
     methods: { log: action('log1') },
   }));

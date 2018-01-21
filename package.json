@@ -10,14 +10,10 @@
     "start": "cross-env NODE_ENV=production node build/main.js",
     "precommit": "npm run lint",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "test": "jest --config test/unit/jest.conf.js --coverage"
   },
   "dependencies": {
-    "@storybook/addon-actions": "^3.3.10",
-    "@storybook/addon-knobs": "^3.3.10",
-    "@storybook/addon-links": "^3.3.10",
-    "@storybook/addon-notes": "^3.3.10",
-    "@storybook/vue": "^3.3.10",
     "axios": "^0.16.2",
     "cross-env": "^5.0.1",
     "express": "^4.15.3",
@@ -26,6 +22,13 @@
     "vue-loader": "13.6.1"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.3.10",
+    "@storybook/addon-knobs": "^3.3.10",
+    "@storybook/addon-links": "^3.3.10",
+    "@storybook/addon-notes": "^3.3.10",
+    "@storybook/addon-storyshots": "^3.3.10",
+    "@storybook/vue": "^3.3.10",
+    "@vue/test-utils": "^1.0.0-beta.10",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "backpack-core": "^0.4.1",
@@ -38,6 +41,14 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "node-sass": "^4.7.2"
+    "jest": "^22.1.4",
+    "jest-serializer-vue": "^0.3.0",
+    "jest-vue-preprocessor": "^1.3.1",
+    "node-sass": "^4.7.2",
+    "react-test-renderer": "^16.2.0",
+    "sass-loader": "^6.0.6",
+    "vue-jest": "^1.4.0",
+    "vue-server-renderer": "^2.5.13",
+    "vue-template-compiler": "^2.5.13"
   }
 }
