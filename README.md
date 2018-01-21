@@ -1,6 +1,8 @@
-# test-project
+# Nuxt Starter Kit v2
 
-> Nuxt.js project
+> I've learned a lot about Nuxt and best practices.  Instead of trying to restructure v1 of my starter kit I decided to start fresh.  Based off of the [Nuxt Express template](https://github.com/nuxt-community/express-template).
+
+
 
 ## Build Setup
 
@@ -15,8 +17,17 @@ $ npm run dev
 $ npm start
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+For detailed explanation on how Nuxt works, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
 ## Backpack
 
-We use [backpack](https://github.com/palmerhq/backpack) to watch and build the application, so you can use the latest ES6 features (module syntax, async/await, etc.).
+Nuxt uses [backpack](https://github.com/palmerhq/backpack) to watch and build the application, so you can use the latest ES6 features (module syntax, async/await, etc.).
+
+## Storybook
+
+> [Storybook](https://storybook.js.org/basics/guide-vue/) is a development environment for UI components. It allows you to browse a component library, view the different states of each component, and interactively develop and test components.
+
+``` bash
+# build and run Storybook
+$ npm run storybook
+```
