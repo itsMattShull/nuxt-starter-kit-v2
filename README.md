@@ -32,4 +32,4 @@ Nuxt uses [backpack](https://github.com/palmerhq/backpack) to watch and build th
 $ npm run storybook
 ```
 
-Stories are written in the components folder.  This is not a hard and fast rule.  You can change where stories are located by changing the config in `.storybook/index.js`.  Out of the box it's set to look for any files inside of `components` that have a `.story.js` extension.
+Stories are written in the components folder.  This is not a hard and fast rule.  You can change where stories are located by changing the config in `.storybook/config.js`.  Out of the box it's set to look for any files inside of `components` that have a `.story.js` extension.
