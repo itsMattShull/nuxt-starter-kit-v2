@@ -23,7 +23,7 @@
     "express": "^4.15.3",
     "nuxt": "^1.0.0-rc3",
     "source-map-support": "^0.4.15",
-    "vue-loader": "^13.7.0"
+    "vue-loader": "13.6.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
