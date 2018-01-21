@@ -5,5 +5,5 @@ import MyFooter from './Footer.vue';
 storiesOf('MyFooter', module)
   .add('story as a component', () => ({
     components: { MyFooter },
-    template: '<my-footer>story as a component</my-footer>'
+    template: '<my-footer>story as a component</my-footer>',
   }));

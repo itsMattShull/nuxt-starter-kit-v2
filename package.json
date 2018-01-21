@@ -13,13 +13,17 @@
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
+    "@storybook/addon-actions": "^3.3.10",
+    "@storybook/addon-knobs": "^3.3.10",
+    "@storybook/addon-links": "^3.3.10",
+    "@storybook/addon-notes": "^3.3.10",
     "@storybook/vue": "^3.3.10",
     "axios": "^0.16.2",
     "cross-env": "^5.0.1",
     "express": "^4.15.3",
     "nuxt": "^1.0.0-rc3",
     "source-map-support": "^0.4.15",
-    "vue-loader": "13.6.1"
+    "vue-loader": "^13.7.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
