@@ -12,3 +12,6 @@ dist
 
 # Backpack build
 build
+
+# Misc
+.DS_Store
