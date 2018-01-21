@@ -26,5 +26,6 @@ export default {
   padding: 10px 20px;
   background-color: white;
   outline: none;
+  cursor: pointer;
 }
 </style>
