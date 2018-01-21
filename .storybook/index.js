@@ -1,11 +1,7 @@
 import Vue from 'vue';
 
-import { storiesOf } from '@storybook/vue';
+const req = require.context('../components', true, /\.story\.js$/)
 
-import MyFooter from '../components/Footer.vue';
-
-storiesOf('MyFooter', module)
-  .add('story as a component', () => ({
-    components: { MyFooter },
-    template: '<my-footer>story as a component</my-footer>'
-  }));
+function loadStories() {
+  req.keys().forEach((filename) => req(filename))
+}
