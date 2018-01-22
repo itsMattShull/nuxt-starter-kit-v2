@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots MyFooter story as a component 1`] = `
+<footer>
+  
+  Visit our website for more documentation : 
+  <a
+    href="https://nuxtjs.org"
+    target="_blank"
+  >
+    nuxtjs.org
+  </a>
+</footer>
+`;

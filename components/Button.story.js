@@ -15,6 +15,10 @@ storiesOf('MyButton', module)
     components: { MyButton },
     template: '<my-button :rounded="false">A Button with square edges</my-button>',
   }))
+  .add('change color', () => ({
+    components: { MyButton },
+    template: '<my-button color="#ff0000">A Button with changed colors</my-button>',
+  }))
   .add('template + methods', () => ({
     components: { MyButton },
     template: `

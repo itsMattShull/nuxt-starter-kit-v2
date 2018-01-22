@@ -5,6 +5,7 @@ module.exports = {
   moduleNameMapper: {
     '^~/(.*)$': '<rootDir>/$1',
   },
+  verbose: true,
   transform: {
     '.*?\\.vue$': '<rootDir>/node_modules/jest-vue-preprocessor',
     '.*': 'babel-jest',
@@ -13,7 +14,11 @@ module.exports = {
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
   testPathIgnorePatterns: [
     '<rootDir>/test/e2e',
+    '<rootDir>/components/*.vue',
     '<rootDir>/node_modules',
+  ],
+  transformIgnorePatterns: [
+    '/node_modules/(?!(@storybook/.*\\.vue$))',
   ],
   testRegex: '(/__tests__/.*|\\.(test|spec))\\.(ts|js)$',
   mapCoverage: true,

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots MyButton change color 1`] = `
+<button
+  class="button"
+  style="color: rgb(255, 0, 0); border-color: #ff0000;"
+>
+  A Button with changed colors!
+</button>
+`;
+
+exports[`Storyshots MyButton rounded 1`] = `
+<button
+  class="button rounded"
+  style="color: rgb(66, 185, 131); border-color: #42b983;"
+>
+  A Button with rounded edges!
+</button>
+`;
+
+exports[`Storyshots MyButton square 1`] = `
+<button
+  class="button"
+  style="color: rgb(66, 185, 131); border-color: #42b983;"
+>
+  A Button with square edges!
+</button>
+`;
+
+exports[`Storyshots MyButton template + methods 1`] = `
+<p>
+  <button
+    class="button rounded"
+    style="color: rgb(66, 185, 131); border-color: #42b983;"
+  >
+    MyButton rendered in a template + props & methods!
+  </button>
+</p>
+`;
