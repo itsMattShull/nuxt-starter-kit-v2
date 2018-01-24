@@ -16,16 +16,16 @@ export default {
 };
 </script>
 
-<style>
-.rounded {
-  border-radius: 5px;
-}
+<style lang="scss" scoped>
+  .rounded {
+    border-radius: 5px;
+  }
 
-.button {
-  border: 3px solid;
-  padding: 10px 20px;
-  background-color: white;
-  outline: none;
-  cursor: pointer;
-}
+  .button {
+    border: 3px solid;
+    padding: 10px 20px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+  }
 </style>
