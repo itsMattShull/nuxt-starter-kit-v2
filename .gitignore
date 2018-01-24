@@ -14,7 +14,7 @@ dist
 build
 
 # Misc
-.storybook-setup.md
+.tutorials
 /.buildpath
 /build/
 */archive/
