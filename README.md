@@ -33,3 +33,6 @@ $ npm run storybook
 ```
 
 Stories are written in the components folder.  This is not a hard and fast rule.  You can change where stories are located by changing the config in `.storybook/config.js`.  Out of the box it's set to look for any files inside of the `components` directory that has a `.story.js` extension.
+
+## Authentication and Authorization
+Using Express and Axios this project allows you to auth users and protect pages.  `server/api/auth.js` shows the endpoints used to log a user in.  You can find [documentation on what the endpoints expect and return on Postman.](https://documenter.getpostman.com/view/3748927/nuxt-starter-kit-v2/RVg2AoNd) It uses `store/index.js` to manage the state of a user and send login/logout actions.  Also check `pages/index.vue` to see what methods to use to log in and `pages/admin/index.vue` to see how to protect a page so only authenticated users can see it.
