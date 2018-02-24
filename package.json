@@ -14,12 +14,20 @@
     "test": "jest --config test/unit/jest.conf.js --coverage"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.0.1",
+    "@storybook/addon-actions": "^3.3.14",
     "axios": "^0.16.2",
+    "body-parser": "^1.18.2",
     "cross-env": "^5.0.1",
     "express": "^4.15.3",
+    "express-session": "^1.15.6",
+    "lory.js": "^2.3.4",
     "nuxt": "^1.0.0-rc3",
+    "request": "^2.83.0",
     "source-map-support": "^0.4.15",
-    "vue-loader": "13.7.0"
+    "vue": "^2.5.13",
+    "vue-loader": "13.7.0",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "^3.4.0-alpha.5",

@@ -15,6 +15,8 @@ module.exports = {
     // don't require .vue extension when importing
     "import/extensions": 0,
     "no-param-reassign": 0,
+    "arrow-body-style": 0,
+    "no-underscore-dangle": 0,
     "max-len": 0,
     camelcase: 0,
     // allow optionalDependencies

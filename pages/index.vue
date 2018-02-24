@@ -1,48 +1,72 @@
 <template>
   <section class="container">
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <h1 class="title">
-      USERS
-    </h1>
-    <ul class="users">
-      <li v-for="(user, index) in users" :key="index" class="user">
-        <nuxt-link :to="{ name: 'id', params: { id: index }}">
-          {{ user.name }}
-        </nuxt-link>
-      </li>
-    </ul>
+    <form v-on:submit.prevent="login">
+      <div style="margin-top: 10px;">
+        <label for="username">Username</label>
+        <input type="text" name="username" v-model="username" autofocus>
+      </div>
+      <div style="margin-top: 10px;">
+        <label for="password">Password</label>
+        <input type="password" name="password" v-model="password">
+      </div>
+      <div style="margin-top: 10px;">
+        <input type="submit" value="Log In">
+      </div>
+    </form>
   </section>
 </template>
 
 <script>
-import axios from '~/plugins/axios'
+// import axios from '~/plugins/axios';
 
 export default {
-  async asyncData () {
-    let { data } = await axios.get('/api/users')
-    return { users: data }
-  },
-  head () {
+  head() {
     return {
-      title: 'Users'
-    }
+      title: 'Log In',
+    };
   },
-}
+  data() {
+    return {
+      username: '',
+      password: '',
+    };
+  },
+  fetch({ store, redirect }) {
+    if (store.state.user) {
+      return redirect('/admin');
+    }
+    return false;
+  },
+  methods: {
+    async login() {
+      try {
+        await this.$store.dispatch('login', {
+          username: this.username,
+          password: this.password,
+        });
+        this.username = '';
+        this.password = '';
+        window.location.replace('/admin');
+      } catch (e) {
+        // eslint-disable-next-line
+        console.log(e);
+      }
+    },
+  },
+};
 </script>
 
-<style scoped>
-.title
-{
-  margin: 30px 0;
-}
-.users
-{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.user
-{
-  margin: 10px 0;
-}
+<style lang="scss" scoped>
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 80%;
+  }
 </style>

@@ -14,25 +14,21 @@
 </template>
 
 <script>
-import axios from '~/plugins/axios'
+import axios from '~/plugins/axios.js';
 
 export default {
   name: 'id',
-  asyncData ({ params, error }) {
-    return axios.get('/api/users/' + params.id)
-      .then((res) => {
-        return { user: res.data }
-      })
-      .catch((e) => {
-        error({ statusCode: 404, message: 'User not found' })
-      })
+  asyncData({ params, error }) {
+    return axios.get(`/api/users/${params.id}`).then((res) => { return { user: res.data }; }).catch(() => {
+      error({ statusCode: 404, message: 'User not found' });
+    });
   },
-  head () {
+  head() {
     return {
-      title: `User: ${this.user.name}`
-    }
-  }
-}
+      title: `User: ${this.user.name}`,
+    };
+  },
+};
 </script>
 
 <style scoped>
