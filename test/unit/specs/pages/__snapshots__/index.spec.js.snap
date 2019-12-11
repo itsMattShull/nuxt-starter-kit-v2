@@ -1,11 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Page / renders to a snapshot 1`] = `
-<section class="container">
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo">
-    <h1 class="title">
-        USERS
-    </h1>
-    <ul class="users"></ul>
+<section
+  class="container"
+>
+  <form>
+    <div
+      style="margin-top: 10px;"
+    >
+      <label
+        for="username"
+      >
+        Username
+      </label>
+       
+      <input
+        autofocus="autofocus"
+        name="username"
+        type="text"
+      />
+    </div>
+     
+    <div
+      style="margin-top: 10px;"
+    >
+      <label
+        for="password"
+      >
+        Password
+      </label>
+       
+      <input
+        name="password"
+        type="password"
+      />
+    </div>
+     
+    <div
+      style="margin-top: 10px;"
+    >
+      <input
+        type="submit"
+        value="Log In"
+      />
+    </div>
+  </form>
 </section>
 `;

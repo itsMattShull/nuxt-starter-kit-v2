@@ -2,7 +2,8 @@
 
 exports[`Component Button renders to a snapshot 1`] = `
 <div>
-    <nuxt></nuxt>
-    <!---->
+  <nuxt-stub />
+   
+  <myfooter-stub />
 </div>
 `;

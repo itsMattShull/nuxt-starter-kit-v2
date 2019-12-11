@@ -1,62 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1516640448257" clover="3.2.0">
-  <project timestamp="1516640448257" name="All files">
-    <metrics statements="33" coveredstatements="4" conditionals="18" coveredconditionals="0" methods="11" coveredmethods="2" elements="62" coveredelements="6" complexity="0" loc="33" ncloc="33" packages="3" files="5" classes="5">
+<coverage generated="1541148825248" clover="3.2.0">
+  <project timestamp="1541148825248" name="All files">
+    <metrics statements="32" coveredstatements="4" conditionals="14" coveredconditionals="0" methods="15" coveredmethods="3" elements="61" coveredelements="7" complexity="0" loc="32" ncloc="32" packages="4" files="6" classes="6">
       <package name="components">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <file name="Button.vue" path="/Users/mattshull/Documents/Projects/nuxt-starter-kit-v2/components/Button.vue">
+        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <file name="AdminNav.vue" path="/home/jefrydco/Projects/Github/nuxt-starter-kit-v2/components/AdminNav.vue">
+          <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
+        </file>
+        <file name="Button.vue" path="/home/jefrydco/Projects/Github/nuxt-starter-kit-v2/components/Button.vue">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
           <line num="6" count="4" type="stmt"/>
         </file>
       </package>
       <package name="layouts">
-        <metrics statements="10" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <file name="default.vue" path="/Users/mattshull/Documents/Projects/nuxt-starter-kit-v2/layouts/default.vue">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="default.vue" path="/home/jefrydco/Projects/Github/nuxt-starter-kit-v2/layouts/default.vue">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="2" count="1" type="stmt"/>
         </file>
-        <file name="error.vue" path="/Users/mattshull/Documents/Projects/nuxt-starter-kit-v2/layouts/error.vue">
-          <metrics statements="9" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="3" count="0" type="stmt"/>
-          <line num="6" count="0" type="stmt"/>
-          <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="12" count="0" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="15" count="0" type="stmt"/>
-          <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="19" count="0" type="stmt"/>
-          <line num="39" count="0" type="stmt"/>
-        </file>
       </package>
       <package name="pages">
-        <metrics statements="22" coveredstatements="2" conditionals="12" coveredconditionals="0" methods="8" coveredmethods="1"/>
-        <file name="_id.vue" path="/Users/mattshull/Documents/Projects/nuxt-starter-kit-v2/pages/_id.vue">
-          <metrics statements="18" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="6" coveredmethods="0"/>
-          <line num="3" count="0" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="9" count="0" type="stmt"/>
-          <line num="11" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="16" count="0" type="stmt"/>
-          <line num="17" count="0" type="stmt"/>
-          <line num="19" count="0" type="stmt"/>
-          <line num="20" count="0" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
-          <line num="26" count="0" type="stmt"/>
-          <line num="32" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="34" count="0" type="stmt"/>
-          <line num="35" count="0" type="stmt"/>
-          <line num="37" count="0" type="stmt"/>
-          <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="41" count="0" type="stmt"/>
-          <line num="61" count="0" type="stmt"/>
-        </file>
-        <file name="index.vue" path="/Users/mattshull/Documents/Projects/nuxt-starter-kit-v2/pages/index.vue">
-          <metrics statements="4" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="1"/>
-          <line num="2" count="1" type="stmt"/>
-          <line num="4" count="2" type="cond" truecount="0" falsecount="4"/>
+        <metrics statements="16" coveredstatements="2" conditionals="7" coveredconditionals="0" methods="8" coveredmethods="2"/>
+        <file name="_id.vue" path="/home/jefrydco/Projects/Github/nuxt-starter-kit-v2/pages/_id.vue">
+          <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+          <line num="2" count="0" type="stmt"/>
           <line num="6" count="0" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
+        </file>
+        <file name="index.vue" path="/home/jefrydco/Projects/Github/nuxt-starter-kit-v2/pages/index.vue">
+          <metrics statements="11" coveredstatements="2" conditionals="7" coveredconditionals="0" methods="4" coveredmethods="2"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="16" count="0" type="stmt"/>
+          <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="18" count="0" type="stmt"/>
+          <line num="20" count="0" type="stmt"/>
+          <line num="22" count="2" type="cond" truecount="0" falsecount="5"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="30" count="0" type="stmt"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="34" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="pages.admin">
+        <metrics statements="12" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <file name="index.vue" path="/home/jefrydco/Projects/Github/nuxt-starter-kit-v2/pages/admin/index.vue">
+          <metrics statements="12" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="4" coveredmethods="0"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="3" count="0" type="stmt"/>
           <line num="10" count="0" type="stmt"/>
+          <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="12" count="0" type="stmt"/>
+          <line num="14" count="0" type="stmt"/>
+          <line num="16" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="20" count="0" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="29" count="0" type="stmt"/>
         </file>
       </package>
     </metrics>
